@@ -1,0 +1,109 @@
+{
+  "animals": [
+    {
+      "names": "Axolotl",
+      "type": "Amphibian",
+      "number": 45,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_axolotl-web.jpg"
+    },
+    {
+      "names": "Hellbender",
+      "type": "Amphibian",
+      "number": 1,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_hellbender-sm.jpg"
+    },
+    {
+      "names": "Surinam Toad",
+      "type": "Amphibian",
+      "number": 20,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_surinam-toad-web.jpg"
+    },
+    {
+      "names": "Baird's Tapir",
+      "type": "Mammal",
+      "number": 12,
+      "isCarnivore": false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_tapir5.jpg"
+    },
+    {
+      "names": "Red Panda",
+      "type": "Mammal",
+      "number": 9,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_redpanda4.jpg"
+    },
+    {
+      "names": "Belted Galloway",
+      "type": "Mammal",
+      "number": 36,
+      "isCarnivore": false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_belted-galloway-web9.jpg"
+    },
+    {
+      "names": "Red Tail TriggerFish",
+      "type": "Fish",
+      "number": 3,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_6-30-14_red-tailed_triggerfish_-_amiee_stubbs.jpg"
+    },
+    {
+      "names": "Blue Head Wrasse",
+      "type": "Fish",
+      "number": 6,
+      "isCarnivore": false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_bluehead-wrasse-web.jpg"
+    },
+    {
+      "names": "WHITE-BLOTCHED RIVER STINGRAY",
+      "type": "Fish",
+      "number": 3,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_white-blotched-stingray.jpg"
+    },
+    {
+      "names": "Blue-Billed Curassow",
+      "type": "Bird",
+      "number": 3,
+      "isCarnivore": false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_curassow-1.jpg"
+    },
+    {
+      "names": "Lorikeet",
+      "type": "Bird",
+      "number": 15,
+      "isCarnivore": false,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_lorikeet8.jpg"
+    },
+    {
+      "names": "Saddle-Billed Stork",
+      "type": "Bird",
+      "number": 16,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_saddlebillstork2.jpg"
+    },
+    {
+      "names": "Alligator Snapping Turtle",
+      "type": "Reptile",
+      "number": 2,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_alligator-snapping-turtle.jpg"
+    },
+    {
+      "names": "Emerald Tree Boa",
+      "type": "Reptile",
+      "number": 3,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_emerald-tree-boa-web.jpg"
+    },
+    {
+      "names": "Giant Haitian Galliwasp",
+      "type": "Reptile",
+      "number": 4,
+      "isCarnivore": true,
+      "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_giant-h-galliwasp-web.jpg"
+    }
+  ]
+}
