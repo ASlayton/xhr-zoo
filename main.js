@@ -16,7 +16,11 @@ function WTF() {
 const buildDomString = (animalArray) => {
   let myString = "";
   for(let i = 0; i < animalArray.length; i++){
-    myString += `<div class='animal'>`;
+    if (animalArray.isCarnivore) {
+      myString += `<div class='animal carnivore'>`;
+    }else{
+      myString += `<div class='animal vegetable'>`;
+    };
     myString +=   `<h1>${animalArray[i].names}<h1>`;
     myString +=   `<h3>${animalArray[i].number}</h3>`;
     myString +=   `<img src='${animalArray[i].imageUrl}' alt='${animalArray[i].names}' class='animal-image'>`;
@@ -25,9 +29,14 @@ const buildDomString = (animalArray) => {
     myString +=   `</div>`;
     myString += `</div>`;
   };
-  
   printToDom(myString, "animal-container")
 };
+
+const showCarnivores = () => {};
+
+const showVegetables = () => {};
+
+const animalEscaped = () => {};
 
 function startApplication(){
   let myRequest = new XMLHttpRequest();
