@@ -25,3 +25,19 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.button-container {
+  width: 100%;
+}
+
+button {
+  margin: auto;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
