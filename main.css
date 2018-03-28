@@ -33,3 +33,11 @@ body {
 button {
   margin: auto;
 }
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
