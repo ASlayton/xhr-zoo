@@ -28,7 +28,6 @@ const addEscapedEventListeners = () => {
   for(let i = 0; i < escapedButtons.length; i++){
     escapedButtons[i].addEventListener("click", animalEscaped);
   };
-
 };
 
 const animalEscaped = (e) => {
@@ -54,7 +53,6 @@ const initalizeFoundButton = () => {
     };
     addEscapedEventListeners();
   });
-
 }; 
 
 const showCarnivores = () => {
@@ -65,14 +63,31 @@ const showCarnivores = () => {
   };
 };
 
+const initializeEatMeButtons = () => {
+  const eatMeButtons = document.getElementsByClassName('eatMe');
+  for(let n = 0; n < eatMeButtons.length; n++){
+    eatMeButtons[n].addEventListener('click', itsAlreadyBeenEaten);
+  };
+};
+
+const itsAlreadyBeenEaten = (e) => {
+  console.log('e', e);
+  const currentNumber = e.target.parentNode.parentNode.children[1].innerHTML;
+  const newNumber = currentNumber *1 -1;
+  e.target.parentNode.parentNode.children[1].innerHTML = newNumber;
+};
+
+
 const showVegetables = () => {
   const vegetables = document.getElementsByClassName('vegetable');
   for(let j = 0; j < vegetables.length; j++){
-    vegetables[j].children[3].innerHTML ='<button>EAT ME!!!</button>';
+    vegetables[j].children[3].innerHTML ='<button class="eatMe">EAT ME!!!</button>';
     vegetables[j].classList.add('green');
-
   };
+  initializeEatMeButtons();
 };
+
+
 
 
 function ifItLoads(){
