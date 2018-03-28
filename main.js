@@ -4,15 +4,6 @@ const printToDom = (myInnerds, putItHere) => {
   document.getElementById(putItHere).innerHTML = myInnerds;
 };
 
-function ifItLoads(){
-  const myData = JSON.parse(this.responseText);
-  buildDomString(myData.animals);
-};
-
-function WTF() {
-  console.log("You Suck");
-};
-
 const buildDomString = (animalArray) => {
   let myString = "";
   for(let i = 0; i < animalArray.length; i++){
@@ -25,18 +16,40 @@ const buildDomString = (animalArray) => {
     myString +=   `<h3>${animalArray[i].number}</h3>`;
     myString +=   `<img src='${animalArray[i].imageUrl}' alt='${animalArray[i].names}' class='animal-image'>`;
     myString +=   `<div class='button-container'>`;
-    myString +=     `<button class='animal-escape'>Escaped</button>`;
+    myString +=     `<button class='escaped'>Escaped</button>`;
     myString +=   `</div>`;
     myString += `</div>`;
   };
   printToDom(myString, "animal-container")
 };
 
+const addEscapedEventListeners = () => {
+  const escapedButtons = document.getElementsByClassName('escaped');
+  for(let i = 0; i < escapedButtons.length; i++){
+    escapedButtons[i].addEventListener("click", animalEscaped);
+  };
+};
+
+const animalEscaped = () => {
+
+  showCarnivores();
+  showVegetables();
+};
+
 const showCarnivores = () => {};
 
 const showVegetables = () => {};
 
-const animalEscaped = () => {};
+
+function ifItLoads(){
+  const myData = JSON.parse(this.responseText);
+  buildDomString(myData.animals);
+  addEscapedEventListeners();
+};
+
+function WTF() {
+  console.log("You Suck");
+};
 
 function startApplication(){
   let myRequest = new XMLHttpRequest();
